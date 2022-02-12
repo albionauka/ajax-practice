@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Multiple AJAX</title>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+
+    //Instuctions 
+    //Open console in browser
+    //What do you see?
+    //Follow instructions for the following AJAX calls
+
+    // Performing GET requests to the OMDB API and logging the responses to the console
+    //example
+    $.ajax({
+      url: "https://www.omdbapi.com/?t=romancing+the+stone&y=&plot=short&apikey=trilogy",
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+    });
+
+    //console.log Plot
+    $.ajax({
+      url: "https://www.omdbapi.com/?t=the+revenant&y=&plot=short&apikey=trilogy",
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+    });
+
+    //console.log Awards
+    $.ajax({
+      url: "https://www.omdbapi.com/?t=god+father&y=&plot=short&apikey=trilogy",
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+    });
+
+    //Step 1: add promise (.then)
+    //Step 2: console.log Language
+    $.ajax({
+      url: "https://www.omdbapi.com/?t=space+jam&y=&plot=short&apikey=trilogy",
+      method: "GET"
+    });
+
+    //Step 1: add method
+    //Step 2: add promise(.then)
+    //console.log Rated
+    $.ajax({
+      url: "https://www.omdbapi.com/?t=boiler+room&y=&plot=short&apikey=trilogy",
+      
+    })
+
+    //Write AJAX call for Inception "https://www.omdbapi.com/?t=inception&y=&plot=short&apikey=trilogy"
+    
+
+
+    //Write AJAX call for The Dark Night "https://www.omdbapi.com/?t=the+dark+night&y=&plot=short&apikey=trilogy"
+    //console.log Runtime
+   
+
+
+   
+// ---------------------------------------------------------
+
+    console.log("Because our AJAX requests are asynchronous, this line of code will most likely log first");
+  </script>
+
+</body>
+
+</html>
